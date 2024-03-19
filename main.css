@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cfcfcf;
+}
+
+.container {
+    max-width: 1025px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+}
+
+header, footer{
+    color: #fff;
+    background-color: #3d149b;
+    font-weight: bold;
+}
+
+
+header{
+    position: sticky;
+    margin-bottom: 24px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header .container,
+footer .container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-size: 32px;
+}
+
+header nav li{
+    display: inline;
+    list-style: none;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;;
+}
+
+
+.sobre-a-loja{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-left: 10px;
+    border-bottom: solid 2px #3d149b;
+    color: #3d149b;
+}
+
+.descricao-loja{
+    font-size: 15px;
+}
+
+
+#about{
+    margin-left: 10px;
+}
+
+section h3{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+section p{
+    padding-left: 10px;
+    margin-top: 50px;
+}
+
+.secao-de-produtos p{
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.produtos{
+    list-style: none;
+    padding: 5px;
+}
+
+.produtos li h3{
+    margin: 8px 8px;
+}
+
+.lista-produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%) ;
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.descricao{
+    font-size: 15px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    margin: 10px 10px ;
+    background-color: #3d149b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+
+nav li:hover{
+    pointer-events: stroke;
+}
+
+
+@media screen and (max-width: 640px) {
+    .container, .container-flex{
+        display: block;
+        max-width: 90%;
+    }
+
+    img{
+        max-width: 90%;
+    }
+
+    header{
+        position: sticky;
+        margin-bottom: 24px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    header .container,
+    footer .container{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5em;
+    }
+    
+    header h1{
+        font-size: 1em;
+    }
+    
+    header nav li{
+        font-size: 1em;
+    }
+
+    .lista-produtos{
+    display: block;
+    }
+    
+    footer{
+    margin-top: 2em;
+    }
+
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    img{
+        max-width: 60%;
+    }
+
+    header .container,
+    footer .container{
+        padding: 1.5em;
+    }
+
+    .lista-produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 50%) ;
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    .descricao,h3{
+        font-size: 1.5em;
+    }
+
+    .foto-tenis{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .button{
+        font-size: 1em;
+    }
+
+    footer{
+        margin-top: 5em;
+    }
+
+}
